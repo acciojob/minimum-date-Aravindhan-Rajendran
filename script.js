@@ -1,5 +1,7 @@
 function minDate(dates) {
-  //write you code here
+  let dateObjects = dates.map(date => new Date(date));
+  let minDate = new Date(Math.min(...dateObjects));
+  return minDate;
 }
 
 // Do not change the code
